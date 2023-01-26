@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.3.0...v1.4.0) (2023-01-26)
+
+
+### Features
+
+* change package name ([b21e452](https://github.com/EpicDiceStudio/ng-whiteboard/commit/b21e45287ef1205b744bf96575d7d0220228aa0c))
+
 # [1.3.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.2.0...v1.3.0) (2023-01-26)
 
 
