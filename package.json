@@ -7,7 +7,7 @@
     "start": "nx serve demo",
     "copy:readme": "copyfiles ./README.md ./projects/ng-whiteboard",
     "build": "npm run build:lib && npm run build:demo",
-    "build:lib": "yarn copy:readme && nx build ng-whiteboard --prod",
+    "build:lib": "nx build ng-whiteboard --prod",
     "build:demo": "nx build demo --prod --base-href='https://mostafazke.github.io/ng-whiteboard/'",
     "format:check": "nx format:check",
     "format:write": "nx format:write",
