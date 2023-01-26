@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
-  "version": 2,
+  "version": 1,
   "projects": {
     "demo": "projects/demo",
     "ng-whiteboard": "projects/ng-whiteboard"
