@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mostafazke/ng-whiteboard"
+    "url": "https://github.com/EpicDiceStudio/ng-whiteboard"
   },
   "description": "Angular whiteboard component forked by Epic Dice Studio",
   "keywords": [
@@ -22,7 +22,7 @@
   ],
   "homepage": "https://mostafazke.github.io/ng-whiteboard",
   "bugs": {
-    "url": "https://github.com/mostafazke/ng-whiteboard/issues"
+    "url": "https://github.com/EpicDiceStudio/ng-whiteboard/issues"
   },
   "dependencies": {
     "tslib": "^2.3.0"
