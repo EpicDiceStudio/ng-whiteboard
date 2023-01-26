@@ -12,11 +12,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: npm ci --force
+      - name: npm ci
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
+      - run: npm ci --force
       - run: npm run build:lib
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v3
