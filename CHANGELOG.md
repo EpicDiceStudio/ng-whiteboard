@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.5.0...v1.6.0) (2023-03-10)
+
+
+### Features
+
+* add add remove and update element events ([0f10d3c](https://github.com/EpicDiceStudio/ng-whiteboard/commit/0f10d3c9d934c05bb57f6e53074f0741c7afb0eb))
+
 # [1.5.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.4.0...v1.5.0) (2023-01-26)
 
 
