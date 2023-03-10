@@ -1,8 +1,33 @@
-import { Component, AfterViewInit, ViewChild, Input, ElementRef, OnDestroy, Output, EventEmitter, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  AfterViewInit,
+  ViewChild,
+  Input,
+  ElementRef,
+  OnDestroy,
+  Output,
+  EventEmitter,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
+} from '@angular/core';
 import { NgWhiteboardService } from './ng-whiteboard.service';
 import { Subscription, fromEvent, skip, BehaviorSubject } from 'rxjs';
-import { ElementTypeEnum, FormatType, formatTypes, IAddImage, LineCapEnum, LineJoinEnum, ToolsEnum, WhiteboardElement, WhiteboardOptions } from './models';
+import {
+  ElementTypeEnum,
+  FormatType,
+  formatTypes,
+  IAddImage,
+  LineCapEnum,
+  LineJoinEnum,
+  ToolsEnum,
+  WhiteboardElement,
+  WhiteboardOptions,
+} from './models';
 import { ContainerElement, curveBasis, drag, line, mouse, select, Selection, event } from 'd3';
+import { IAddElement } from './models/add-element.model';
+import { IRemoveElement } from './models/remove-element.model';
+import { IUpdateElement } from './models/update-element.model';
 
 type BBox = { x: number; y: number; width: number; height: number };
 
@@ -70,7 +95,9 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
   @Output() save = new EventEmitter<string>();
   @Output() imageAdded = new EventEmitter();
   @Output() selectElement = new EventEmitter<WhiteboardElement | null>();
-  @Output() deleteElement = new EventEmitter<WhiteboardElement>();
+  @Output() elementRemoved = new EventEmitter<WhiteboardElement>();
+  @Output() elementAdded = new EventEmitter<WhiteboardElement>();
+  @Output() elementUpdated = new EventEmitter<WhiteboardElement>();
   @Output() toolChanged = new EventEmitter<ToolsEnum>();
 
   private selection!: Selection<Element, unknown, null, undefined>;
@@ -202,6 +229,15 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
     );
     this._subscriptionList.push(
       this.whiteboardService.addImageMethodCalled$.subscribe((image) => this.handleDrawImage(image))
+    );
+    this._subscriptionList.push(
+      this.whiteboardService.addElementMethodCalled$.subscribe((data) => this.handleAddElement(data))
+    );
+    this._subscriptionList.push(
+      this.whiteboardService.removeElementMethodCalled$.subscribe((data) => this.handleRemoveElement(data))
+    );
+    this._subscriptionList.push(
+      this.whiteboardService.updateElementMethodCalled$.subscribe((data) => this.handleUpdateElement(data))
     );
     this._subscriptionList.push(this.whiteboardService.eraseSvgMethodCalled$.subscribe(() => this._clearSvg()));
     this._subscriptionList.push(this.whiteboardService.undoSvgMethodCalled$.subscribe(() => this.undoDraw()));
@@ -351,6 +387,33 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
     };
     input.click();
   }
+
+  handleAddElement(data: IAddElement): void {
+    this._pushToData(data.element, data.triggerEvents);
+    this._pushToUndo();
+  }
+
+  handleRemoveElement(data: IRemoveElement): void {
+    const element = this.data.find((el) => el.id === data.id);
+
+    if (element) {
+      this.data = this.data.filter((el) => el !== element);
+      this._pushToUndo();
+      if (data.triggerEvents) this.elementRemoved.emit(element);
+    }
+  }
+
+  handleUpdateElement(data: IUpdateElement): void {
+    const element = this.data.find((el) => el.id === data.element.id);
+
+    if (element) {
+      const index = this.data.indexOf(element);
+      this.data[index] = data.element;
+      this._pushToUndo();
+      if (data.triggerEvents) this.elementUpdated.emit(element);
+    }
+  }
+
   // Handle Draw Image
   handleDrawImage(imageSrc: IAddImage) {
     try {
@@ -589,7 +652,7 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
       if (element) {
         this.data = this.data.filter((el) => el.id !== id);
         this._pushToUndo();
-        this.deleteElement.emit(element);
+        this.elementRemoved.emit(element);
       }
     }
   }
@@ -702,9 +765,10 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
     document.body.appendChild(link);
     link.click();
   }
-  private _pushToData(element: WhiteboardElement) {
+  private _pushToData(element: WhiteboardElement, triggerEvents = true) {
     this.data.push(element);
     this._data.next(this.data);
+    if (triggerEvents) this.elementAdded.emit(element);
   }
   private _clearSvg() {
     this.data = [];
@@ -718,8 +782,19 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
     }
     const currentState = this.undoStack.pop();
     this.redoStack.push(currentState as WhiteboardElement[]);
-    if(this.undoStack.length){
-      this.data = JSON.parse(JSON.stringify(this.undoStack[this.undoStack.length-1]));
+    if (this.undoStack.length) {
+      const nextState = this.undoStack[this.undoStack.length - 1];
+
+      if (currentState && nextState.length < currentState.length) {
+        this.elementRemoved.emit(currentState[currentState.length - 1]);
+      } else if (currentState && nextState.length > currentState.length) {
+        this.elementAdded.emit(nextState[nextState.length - 1]);
+      } else if (currentState && nextState.length === currentState.length) {
+        const element = nextState.find((x, i) => JSON.stringify(x) !== JSON.stringify(currentState[i]));
+        if (element) this.elementUpdated.emit(element);
+      }
+
+      this.data = JSON.parse(JSON.stringify(this.undoStack[this.undoStack.length - 1]));
     } else {
       this.data = JSON.parse(JSON.stringify(this._initialData)) || [];
     }
@@ -730,6 +805,11 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
       return;
     }
     const currentState = this.redoStack.pop();
+    if (currentState && this.data.length > currentState.length) {
+      this.elementRemoved.emit(this.data[this.data.length - 1]);
+    } else if (currentState?.length) {
+      this.elementAdded.emit(currentState[currentState.length - 1]);
+    }
     this.undoStack.push(JSON.parse(JSON.stringify(currentState)) as WhiteboardElement[]);
     this.data = currentState || [];
     this.redo.emit();
@@ -826,6 +906,7 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
       if (this.selectedElement) {
         this.selectedElement.x += (moveEvent as PointerEvent).movementX;
         this.selectedElement.y += (moveEvent as PointerEvent).movementY;
+        this.elementUpdated.emit(this.selectedElement);
       }
     });
     element.addEventListener('pointerup', () => {
@@ -854,6 +935,7 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
           this._resizeDefault(grip, { x, y, width, height });
           break;
       }
+      this.elementUpdated.emit(this.selectedElement);
       this._showGrips(this._getElementBbox(this.selectedElement));
     });
     document.addEventListener('pointerup', () => {

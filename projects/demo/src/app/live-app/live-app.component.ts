@@ -49,7 +49,7 @@ export class LiveAppComponent implements OnInit, AfterViewInit {
       messagingSenderId: environment.messagingSenderId,
       appId: environment.appId,
       measurementId: environment.measurementId,
-      databaseURL: environment.databaseURL
+      databaseURL: environment.databaseURL,
     });
     getAnalytics(app);
     const db = getDatabase(app);
@@ -306,5 +306,17 @@ export class LiveAppComponent implements OnInit, AfterViewInit {
 
   updateOptions() {
     this.options = Object.assign({}, this.options);
+  }
+
+  onElementAdded(element: any): void {
+    console.log('onElementAdded', element);
+  }
+
+  onElementRemoved(element: any): void {
+    console.log('onElementRemoved', element);
+  }
+
+  onElementUpdated(element: any): void {
+    console.log('onElementUpdated', element);
   }
 }
