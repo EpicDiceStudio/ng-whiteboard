@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.4.0...v1.5.0) (2023-01-26)
+
+
+### Bug Fixes
+
+* update angular json version ([d735d38](https://github.com/EpicDiceStudio/ng-whiteboard/commit/d735d3858801bb7ec785e3d0e895df12d7bd2dfd))
+* update peer dependency ([52c26e8](https://github.com/EpicDiceStudio/ng-whiteboard/commit/52c26e85074597e5f34aca73f76ace8624cfb32a))
+
+
+### Features
+
+* update to angular 15 ([53e9828](https://github.com/EpicDiceStudio/ng-whiteboard/commit/53e9828560c4e8e5c828094ae1ccf7519183905a))
+
 # [1.4.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.3.0...v1.4.0) (2023-01-26)
 
 
