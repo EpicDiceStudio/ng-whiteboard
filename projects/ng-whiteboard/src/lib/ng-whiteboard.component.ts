@@ -28,6 +28,7 @@ import { ContainerElement, curveBasis, drag, line, mouse, select, Selection, eve
 import { IAddElement } from './models/add-element.model';
 import { IRemoveElement } from './models/remove-element.model';
 import { IUpdateElement } from './models/update-element.model';
+import { IPatchElement } from './models/patch-element.model';
 
 type BBox = { x: number; y: number; width: number; height: number };
 
@@ -98,6 +99,7 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
   @Output() elementRemoved = new EventEmitter<WhiteboardElement>();
   @Output() elementAdded = new EventEmitter<WhiteboardElement>();
   @Output() elementUpdated = new EventEmitter<WhiteboardElement>();
+  @Output() elementPatched = new EventEmitter<WhiteboardElement>();
   @Output() toolChanged = new EventEmitter<ToolsEnum>();
 
   private selection!: Selection<Element, unknown, null, undefined>;
@@ -238,6 +240,9 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
     );
     this._subscriptionList.push(
       this.whiteboardService.updateElementMethodCalled$.subscribe((data) => this.handleUpdateElement(data))
+    );
+    this._subscriptionList.push(
+      this.whiteboardService.patchElementMethodCalled$.subscribe((data) => this.handlePatchElement(data))
     );
     this._subscriptionList.push(this.whiteboardService.eraseSvgMethodCalled$.subscribe(() => this._clearSvg()));
     this._subscriptionList.push(this.whiteboardService.undoSvgMethodCalled$.subscribe(() => this.undoDraw()));
@@ -411,6 +416,18 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
       this.data[index] = data.element;
       this._pushToUndo();
       if (data.triggerEvents) this.elementUpdated.emit(element);
+    }
+  }
+
+  handlePatchElement(data: IPatchElement): void {
+    const element = this.data.find((el) => el.id === data.element.id);
+
+    if (element) {
+      const index = this.data.indexOf(element);
+      const el = { ...element, ...data.element };
+      this.data[index] = el;
+      this._pushToUndo();
+      if (data.triggerEvents) this.elementPatched.emit(el);
     }
   }
 

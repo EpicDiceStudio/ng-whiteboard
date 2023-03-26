@@ -18,6 +18,7 @@ export class NgWhiteboardService {
   private addElementMethodCallSource = new Subject<IAddElement>();
   private removeElementMethodCallSource = new Subject<IRemoveElement>();
   private updateElementMethodCallSource = new Subject<IUpdateElement>();
+  private patchElementMethodCallSource = new Subject<IUpdateElement>();
 
   // Observable string streams
   eraseSvgMethodCalled$ = this.eraseSvgMethodCallSource.asObservable();
@@ -28,6 +29,7 @@ export class NgWhiteboardService {
   addElementMethodCalled$ = this.addElementMethodCallSource.asObservable();
   removeElementMethodCalled$ = this.removeElementMethodCallSource.asObservable();
   updateElementMethodCalled$ = this.updateElementMethodCallSource.asObservable();
+  patchElementMethodCalled$ = this.patchElementMethodCallSource.asObservable();
 
   // Service message commands
   public erase(): void {
@@ -53,5 +55,8 @@ export class NgWhiteboardService {
   }
   public updateElement(element: WhiteboardElement, triggerEvents = false): void {
     this.updateElementMethodCallSource.next({ element, triggerEvents });
+  }
+  public patchElement(element: WhiteboardElement, triggerEvents = false): void {
+    this.patchElementMethodCallSource.next({ element, triggerEvents });
   }
 }
