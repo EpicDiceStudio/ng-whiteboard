@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.6.0...v1.7.0) (2023-03-26)
+
+
+### Features
+
+* add patch element ([d7e223f](https://github.com/EpicDiceStudio/ng-whiteboard/commit/d7e223f8999fa8c760209bd180b74f10ea1a37eb))
+
 # [1.6.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.5.0...v1.6.0) (2023-03-10)
 
 
