@@ -87,6 +87,8 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
   @Input() enableGrid = false;
   @Input() gridSize = 10;
   @Input() snapToGrid = false;
+  @Input() customAddImages = false;
+  @Input() fireRequestAddImages = false;
 
   @Output() ready = new EventEmitter();
   @Output() dataChange = new EventEmitter<WhiteboardElement[]>();
@@ -101,6 +103,7 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
   @Output() elementUpdated = new EventEmitter<WhiteboardElement>();
   @Output() elementPatched = new EventEmitter<WhiteboardElement>();
   @Output() toolChanged = new EventEmitter<ToolsEnum>();
+  @Output() requestAddImages = new EventEmitter<{ files?: FileList | null; position: { x: number; y: number } }>();
 
   private selection!: Selection<Element, unknown, null, undefined>;
 
@@ -376,21 +379,29 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
   // Handle Image tool
   handleImageTool() {
     const [x, y] = this._calculateXAndY(mouse(this.selection.node() as SVGSVGElement));
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = 'image/*';
-    input.onchange = (e) => {
-      const files = (e.target as HTMLInputElement).files;
-      if (files) {
-        const reader = new FileReader();
-        reader.onload = (e: ProgressEvent) => {
-          const image = (e.target as FileReader).result as string;
-          this.handleDrawImage({ image, x, y });
-        };
-        reader.readAsDataURL(files[0]);
-      }
-    };
-    input.click();
+    if (!this.customAddImages) {
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = 'image/*';
+      input.onchange = (e) => {
+        const files = (e.target as HTMLInputElement).files;
+        if (files) {
+          if (this.fireRequestAddImages) {
+            this.requestAddImages.emit({ files, position: { x, y } });
+          } else {
+            const reader = new FileReader();
+            reader.onload = (e: ProgressEvent) => {
+              const image = (e.target as FileReader).result as string;
+              this.handleDrawImage({ image, x, y });
+            };
+            reader.readAsDataURL(files[0]);
+          }
+        }
+      };
+      input.click();
+    } else {
+      this.requestAddImages.emit({ position: { x, y } });
+    }
   }
 
   handleAddElement(data: IAddElement): void {
