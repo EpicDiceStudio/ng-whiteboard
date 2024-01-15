@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.7.0...v1.8.0) (2023-03-26)
+
+
+### Features
+
+* custom add image methods ([bc8ad78](https://github.com/EpicDiceStudio/ng-whiteboard/commit/bc8ad783bc553ed9ef06b4fcd6f068f933cf404a))
+
 # [1.7.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.6.0...v1.7.0) (2023-03-26)
 
 
