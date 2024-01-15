@@ -89,6 +89,7 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
   @Input() snapToGrid = false;
   @Input() customAddImages = false;
   @Input() fireRequestAddImages = false;
+  @Input() disabled = false;
 
   @Output() ready = new EventEmitter();
   @Output() dataChange = new EventEmitter<WhiteboardElement[]>();
@@ -285,75 +286,81 @@ export class NgWhiteboardComponent implements OnInit, OnChanges, AfterViewInit, 
   }
 
   handleStartEvent() {
-    switch (this.selectedTool) {
-      case ToolsEnum.BRUSH:
-        this.handleStartBrush();
-        break;
-      case ToolsEnum.IMAGE:
-        this.handleImageTool();
-        break;
-      case ToolsEnum.LINE:
-        this.handleStartLine();
-        break;
-      case ToolsEnum.RECT:
-        this.handleStartRect();
-        break;
-      case ToolsEnum.ELLIPSE:
-        this.handleStartEllipse();
-        break;
-      case ToolsEnum.TEXT:
-        this.handleTextTool();
-        break;
-      case ToolsEnum.SELECT:
-        this.handleSelectTool();
-        break;
-      case ToolsEnum.ERASER:
-        this.handleEraserTool();
-        break;
-      default:
-        break;
+    if (!this.disabled) {
+      switch (this.selectedTool) {
+        case ToolsEnum.BRUSH:
+          this.handleStartBrush();
+          break;
+        case ToolsEnum.IMAGE:
+          this.handleImageTool();
+          break;
+        case ToolsEnum.LINE:
+          this.handleStartLine();
+          break;
+        case ToolsEnum.RECT:
+          this.handleStartRect();
+          break;
+        case ToolsEnum.ELLIPSE:
+          this.handleStartEllipse();
+          break;
+        case ToolsEnum.TEXT:
+          this.handleTextTool();
+          break;
+        case ToolsEnum.SELECT:
+          this.handleSelectTool();
+          break;
+        case ToolsEnum.ERASER:
+          this.handleEraserTool();
+          break;
+        default:
+          break;
+      }
     }
   }
   handleDragEvent() {
-    switch (this.selectedTool) {
-      case ToolsEnum.BRUSH:
-        this.handleDragBrush();
-        break;
-      case ToolsEnum.LINE:
-        this.handleDragLine();
-        break;
-      case ToolsEnum.RECT:
-        this.handleDragRect();
-        break;
-      case ToolsEnum.ELLIPSE:
-        this.handleDragEllipse();
-        break;
-      case ToolsEnum.TEXT:
-        this.handleTextDrag();
-        break;
-      default:
-        break;
+    if (!this.disabled) {
+      switch (this.selectedTool) {
+        case ToolsEnum.BRUSH:
+          this.handleDragBrush();
+          break;
+        case ToolsEnum.LINE:
+          this.handleDragLine();
+          break;
+        case ToolsEnum.RECT:
+          this.handleDragRect();
+          break;
+        case ToolsEnum.ELLIPSE:
+          this.handleDragEllipse();
+          break;
+        case ToolsEnum.TEXT:
+          this.handleTextDrag();
+          break;
+        default:
+          break;
+      }
     }
   }
   handleEndEvent() {
-    switch (this.selectedTool) {
-      case ToolsEnum.BRUSH:
-        this.handleEndBrush();
-        break;
-      case ToolsEnum.LINE:
-        this.handleEndLine();
-        break;
-      case ToolsEnum.RECT:
-        this.handleEndRect();
-        break;
-      case ToolsEnum.ELLIPSE:
-        this.handleEndEllipse();
-        break;
-      case ToolsEnum.TEXT:
-        this.handleTextEnd();
-        break;
-      default:
-        break;
+    if (!this.disabled) {
+      switch (this.selectedTool) {
+        case ToolsEnum.BRUSH:
+          this.handleEndBrush();
+          break;
+        case ToolsEnum.LINE:
+          this.handleEndLine();
+          break;
+        case ToolsEnum.RECT:
+          this.handleEndRect();
+          break;
+        case ToolsEnum.ELLIPSE:
+          this.handleEndEllipse();
+          break;
+        case ToolsEnum.TEXT:
+          this.handleTextEnd();
+          break;
+        default:
+          break;
+      }
     }
   }
   // Handle Brush tool
