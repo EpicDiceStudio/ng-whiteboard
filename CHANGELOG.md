@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.8.0...v1.8.1) (2024-01-15)
+
+
+### Bug Fixes
+
+* add disabled input ([de51c6b](https://github.com/EpicDiceStudio/ng-whiteboard/commit/de51c6bb8345579e52cd91b54d6ef569badf7ed1))
+
 # [1.8.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.7.0...v1.8.0) (2023-03-26)
 
 
