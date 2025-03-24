@@ -1,3 +1,18 @@
+# [1.9.0](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.8.1...v1.9.0) (2025-03-24)
+
+
+### Bug Fixes
+
+* **angular:** config file ([e2169f9](https://github.com/EpicDiceStudio/ng-whiteboard/commit/e2169f9f8786edba9be61b313266f367cb31b222))
+* **git:** add to ignore ([ee05562](https://github.com/EpicDiceStudio/ng-whiteboard/commit/ee0556281d699322c9243522e2346d058417bd52))
+* **git:** ignore ([6d4b273](https://github.com/EpicDiceStudio/ng-whiteboard/commit/6d4b273da6c8ca0905ddb9be940f78d31ed67488))
+* **git:** ignore nx files ([db30e49](https://github.com/EpicDiceStudio/ng-whiteboard/commit/db30e49a8af03c52aff7b795c6591ce9429886c7))
+
+
+### Features
+
+* **angular:** update to v16 ([277be08](https://github.com/EpicDiceStudio/ng-whiteboard/commit/277be081e27221f4bb81d07898dab82b3b0191e4))
+
 ## [1.8.1](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.8.0...v1.8.1) (2024-01-15)
 
 
