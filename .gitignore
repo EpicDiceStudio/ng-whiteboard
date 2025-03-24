@@ -39,3 +39,6 @@ testem.log
 Thumbs.db
 
 .angular
+.nx/cache/file-map.json
+.nx/cache/d/daemon.log
+.nx/cache/terminalOutputs/14732497791767763762
