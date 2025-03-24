@@ -1,0 +1,12 @@
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.193Z - Started listening on: \\.\pipe\nx\C:\Users\Pierre\AppData\Local\Temp\2630714780020088b212\d.sock
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.195Z - [WATCHER]: Subscribed to changes within: C:\Users\Pierre\source\repos\ng-whiteboard (native)
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.204Z - Established a connection. Number of open connections: 1
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.206Z - Established a connection. Number of open connections: 2
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.208Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.208Z - Closed a connection. Number of open connections: 1
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.209Z - Done responding to the client Shutdown initiated
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.209Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.210Z - [WATCHER]: Stopping the watcher for C:\Users\Pierre\source\repos\ng-whiteboard (sources)
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.210Z - Closed a connection. Number of open connections: 0
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.210Z - [WATCHER]: Stopping the watcher for C:\Users\Pierre\source\repos\ng-whiteboard (outputs)
+[NX v20.6.2 Daemon Server] - 2025-03-24T20:34:33.210Z - Server stopped because: "Request to shutdown"

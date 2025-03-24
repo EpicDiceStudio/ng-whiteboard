@@ -1,6 +1,6 @@
 {
-  "name": "ng-whiteboard-demo",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "demo",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "projects/demo/src",
   "prefix": "ng-whiteboard",
@@ -85,6 +85,5 @@
         "passWithNoTests": true
       }
     }
-  },
-  "tags": []
+  }
 }

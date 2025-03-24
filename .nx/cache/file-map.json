@@ -1,0 +1,955 @@
+{
+  "version": "6.0",
+  "nxVersion": "16.9.1",
+  "deps": {
+    "@angular/animations": "16.2.12",
+    "@angular/common": "16.2.12",
+    "@angular/compiler": "16.2.12",
+    "@angular/core": "16.2.12",
+    "@angular/forms": "16.2.12",
+    "@angular/platform-browser": "16.2.12",
+    "@angular/platform-browser-dynamic": "16.2.12",
+    "@angular/router": "16.2.12",
+    "@angular/service-worker": "16.2.12",
+    "@nrwl/angular": "16.9.1",
+    "d3": "^5.16.0",
+    "firebase": "^9.14.0",
+    "highlight.js": "^11.6.0",
+    "ngx-colors": "^3.1.3",
+    "ngx-toastr": "^15.1.0",
+    "rxjs": "7.8.2",
+    "tslib": "^2.4.1",
+    "zone.js": "0.13.3",
+    "@angular-devkit/build-angular": "16.2.9",
+    "@angular-eslint/eslint-plugin": "16.0.3",
+    "@angular-eslint/eslint-plugin-template": "16.0.3",
+    "@angular-eslint/template-parser": "16.0.3",
+    "@angular/cli": "16.2.16",
+    "@angular/compiler-cli": "16.2.12",
+    "@angular/language-service": "16.2.12",
+    "@angular/pwa": "16.2.9",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@nrwl/cli": "15.6.2",
+    "@nrwl/cypress": "16.9.1",
+    "@nrwl/eslint-plugin-nx": "16.9.1",
+    "@nrwl/linter": "16.9.1",
+    "@nrwl/nx-cloud": "19.1.0",
+    "@nrwl/workspace": "16.9.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@types/d3": "^5.16.0",
+    "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "5.60.1",
+    "@typescript-eslint/parser": "5.60.1",
+    "codecov": "^3.8.3",
+    "copyfiles": "^2.4.1",
+    "cypress": "^9.1.0",
+    "eslint": "8.46.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "2.13.4",
+    "git-cz": "4.9.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "ng-packagr": "16.2.3",
+    "npm-run-all": "^4.1.5",
+    "nx": "16.9.1",
+    "postcss": "^8.4.5",
+    "postcss-import": "~14.1.0",
+    "postcss-preset-env": "~7.5.0",
+    "postcss-url": "~10.1.3",
+    "prettier": "^2.6.2",
+    "replace-json-property": "^1.8.0",
+    "semantic-release": "^19.0.3",
+    "ts-jest": "29.1.5",
+    "ts-node": "10.9.1",
+    "typescript": "5.1.6"
+  },
+  "pathMappings": {
+    "ng-whiteboard": [
+      "projects/ng-whiteboard/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "demo": [
+        {
+          "file": ".circleci/config.yml",
+          "hash": "11771173619561587110"
+        },
+        {
+          "file": ".editorconfig",
+          "hash": "10484780250276348131"
+        },
+        {
+          "file": ".eslintrc.json",
+          "hash": "6076523549091800167"
+        },
+        {
+          "file": ".github/workflows/main.yml",
+          "hash": "233642598036217223"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "16541692331191330580"
+        },
+        {
+          "file": ".nx/cache/d/daemon.log",
+          "hash": "17594451190849851772"
+        },
+        {
+          "file": ".nx/cache/d/server-process.json",
+          "hash": "5555351685274655633"
+        },
+        {
+          "file": ".nx/cache/file-map.json",
+          "hash": "684073509656485683"
+        },
+        {
+          "file": ".nx/cache/lockfile.hash",
+          "hash": "11868915022685010068"
+        },
+        {
+          "file": ".nx/cache/parsed-lock-file.json",
+          "hash": "17327032449769187327"
+        },
+        {
+          "file": ".nx/cache/project-graph.json",
+          "hash": "12508368040724635277"
+        },
+        {
+          "file": ".nx/workspace-data/d/daemon.log",
+          "hash": "18436949162410031036"
+        },
+        {
+          "file": ".nx/workspace-data/nx_files.nxt",
+          "hash": "15022285065892625612"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "1324685984948235314"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "2708894617512409129"
+        },
+        {
+          "file": ".releaserc",
+          "hash": "14813095472536764596"
+        },
+        {
+          "file": ".travis.yml",
+          "hash": "5278501201145222435"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "1031907106376631047"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "11294071126396992147"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "hash": "14575259439405836668"
+        },
+        {
+          "file": "CODE_OF_CONDUCT.md",
+          "hash": "4771388369842176926"
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "hash": "17762494463552671656"
+        },
+        {
+          "file": "LICENSE",
+          "hash": "15044818247788196647"
+        },
+        {
+          "file": "README.md",
+          "hash": "449759454844677847"
+        },
+        {
+          "file": "changelog.config.js",
+          "hash": "11734347795214652686"
+        },
+        {
+          "file": "jest.config.ts",
+          "hash": "3069074216761126282",
+          "deps": [
+            "npm:@nrwl/jest"
+          ]
+        },
+        {
+          "file": "jest.preset.js",
+          "hash": "17666962557300311861",
+          "deps": [
+            "npm:@nrwl/jest"
+          ]
+        },
+        {
+          "file": "migrations.json",
+          "hash": "4037312767021889786"
+        },
+        {
+          "file": "nx.json",
+          "hash": "7365533479007552186"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "8146874737145210161"
+        },
+        {
+          "file": "package.json",
+          "hash": "8347401797210147477",
+          "deps": [
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@angular/service-worker",
+            "npm:@nrwl/angular",
+            "npm:d3",
+            "npm:firebase",
+            "npm:highlight.js",
+            "npm:ngx-colors",
+            "npm:ngx-toastr",
+            "npm:rxjs",
+            "npm:tslib",
+            "npm:zone.js",
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular-eslint/eslint-plugin",
+            "npm:@angular-eslint/eslint-plugin-template",
+            "npm:@angular-eslint/template-parser",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@angular/language-service",
+            "npm:@angular/pwa",
+            "npm:@commitlint/cli",
+            "npm:@commitlint/config-conventional",
+            "npm:@nrwl/cli",
+            "npm:@nrwl/cypress",
+            "npm:@nrwl/eslint-plugin-nx",
+            "npm:@nrwl/linter",
+            "npm:@nrwl/nx-cloud",
+            "npm:@nrwl/workspace",
+            "npm:@semantic-release/changelog",
+            "npm:@semantic-release/commit-analyzer",
+            "npm:@semantic-release/git",
+            "npm:@semantic-release/github",
+            "npm:@semantic-release/npm",
+            "npm:@semantic-release/release-notes-generator",
+            "npm:@types/d3",
+            "npm:@types/node",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:codecov",
+            "npm:copyfiles",
+            "npm:cypress",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-cypress",
+            "npm:git-cz",
+            "npm:husky",
+            "npm:lint-staged",
+            "npm:ng-packagr",
+            "npm:npm-run-all",
+            "npm:nx",
+            "npm:postcss",
+            "npm:postcss-import",
+            "npm:postcss-preset-env",
+            "npm:postcss-url",
+            "npm:prettier",
+            "npm:replace-json-property",
+            "npm:semantic-release",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "project.json",
+          "hash": "16507249312837047891"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "13879268544167089056"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/14732497791767763762",
+          "hash": "3244421341483603138"
+        }
+      ],
+      "ng-whiteboard": [
+        {
+          "file": "projects/ng-whiteboard/.eslintrc.json",
+          "hash": "3183929628580698947"
+        },
+        {
+          "file": "projects/ng-whiteboard/LICENSE",
+          "hash": "15044818247788196647"
+        },
+        {
+          "file": "projects/ng-whiteboard/README.md",
+          "hash": "4778288948048043381"
+        },
+        {
+          "file": "projects/ng-whiteboard/jest.config.ts",
+          "hash": "16364473221723752346"
+        },
+        {
+          "file": "projects/ng-whiteboard/ng-package.json",
+          "hash": "14451142220152589146"
+        },
+        {
+          "file": "projects/ng-whiteboard/package.json",
+          "hash": "1208179509629848328",
+          "deps": [
+            "npm:tslib",
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:d3",
+            "npm:@types/d3"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/project.json",
+          "hash": "37241190343346578"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/index.ts",
+          "hash": "7677029108799610773"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/cursor.svg",
+          "hash": "16979264517110879566"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/cursors/eraser.svg",
+          "hash": "6505721692427840250"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/cursors/pencil.svg",
+          "hash": "15180579404370758558"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/add-element.model.ts",
+          "hash": "16530807508889519011"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/add-image.model.ts",
+          "hash": "8908829789016344718"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/element-type.enum.ts",
+          "hash": "16716828959754472177"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/brush-element.model.ts",
+          "hash": "10357669927501831560"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/ellipse-element.model.ts",
+          "hash": "6729357636552863869"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/image-element.model.ts",
+          "hash": "14284384018478666916"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/index.ts",
+          "hash": "15849671603929907800"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/line-element.model.ts",
+          "hash": "5953744253232302577"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/rect-element.model.ts",
+          "hash": "9232907699407924335"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/text-element.model.ts",
+          "hash": "10064095732811880405"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/format.model.ts",
+          "hash": "9606778172847339916"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/index.ts",
+          "hash": "5628037812028522024"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/line-cap.enum.ts",
+          "hash": "3181109951266286581"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/line-join.enum.ts",
+          "hash": "15238737120270834768"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/patch-element.model.ts",
+          "hash": "14990787514430633634"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/remove-element.model.ts",
+          "hash": "12886869320988967564"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/tools.enum.ts",
+          "hash": "12631552197051945993"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/update-element.model.ts",
+          "hash": "8114732015101520411"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/whiteboard-element-options.model.ts",
+          "hash": "9558580456981449707"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/whiteboard-element.model.ts",
+          "hash": "6172170017198215645"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/whiteboard-options.model.ts",
+          "hash": "917963529742957696"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.html",
+          "hash": "3220714277899811161"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.scss",
+          "hash": "1699636222259423673"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.spec.ts",
+          "hash": "6229221159442927901",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.ts",
+          "hash": "13723153624659971288",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:d3"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.module.ts",
+          "hash": "1553770486848561261",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.service.spec.ts",
+          "hash": "5665737784015855147",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.service.ts",
+          "hash": "11711274521579875425",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/src/test-setup.ts",
+          "hash": "9531801021999427605",
+          "deps": [
+            "npm:jest-preset-angular/setup-jest"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/tsconfig.json",
+          "hash": "6288192915562887729"
+        },
+        {
+          "file": "projects/ng-whiteboard/tsconfig.lib.json",
+          "hash": "11446785392186267127"
+        },
+        {
+          "file": "projects/ng-whiteboard/tsconfig.lib.prod.json",
+          "hash": "12672405423878371231"
+        },
+        {
+          "file": "projects/ng-whiteboard/tsconfig.spec.json",
+          "hash": "8658740348867974260"
+        }
+      ],
+      "ng-whiteboard-demo": [
+        {
+          "file": "projects/demo/.browserslistrc",
+          "hash": "9613746250742796726"
+        },
+        {
+          "file": "projects/demo/.eslintrc.json",
+          "hash": "6475878675360439213"
+        },
+        {
+          "file": "projects/demo/jest.config.ts",
+          "hash": "16372362799443144648"
+        },
+        {
+          "file": "projects/demo/ngsw-config.json",
+          "hash": "18173499805521069459"
+        },
+        {
+          "file": "projects/demo/project.json",
+          "hash": "9235536109143787679"
+        },
+        {
+          "file": "projects/demo/src/app/app-routing.module.ts",
+          "hash": "2432108275342336157",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/app.component.html",
+          "hash": "16498897523005705592"
+        },
+        {
+          "file": "projects/demo/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/demo/src/app/app.component.spec.ts",
+          "hash": "17266725674663097373",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/app.component.ts",
+          "hash": "12228712645655135889",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/app.module.ts",
+          "hash": "12773630013714910215",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser",
+            "npm:@angular/service-worker",
+            "ng-whiteboard",
+            "npm:ngx-toastr"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/documentation/documentation-routing.module.ts",
+          "hash": "13235320150350170627",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/documentation/documentation.component.html",
+          "hash": "15013584100161450851"
+        },
+        {
+          "file": "projects/demo/src/app/documentation/documentation.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/demo/src/app/documentation/documentation.component.spec.ts",
+          "hash": "6451172404861595079",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/documentation/documentation.component.ts",
+          "hash": "5499852808629984827",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/documentation/documentation.module.ts",
+          "hash": "13583444642055111532",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/examples/basic/basic.component.html",
+          "hash": "8251581241714256060"
+        },
+        {
+          "file": "projects/demo/src/app/examples/basic/basic.component.scss",
+          "hash": "3179267928906402656"
+        },
+        {
+          "file": "projects/demo/src/app/examples/basic/basic.component.spec.ts",
+          "hash": "5068434848561942587",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/examples/basic/basic.component.ts",
+          "hash": "2507848613815324078",
+          "deps": [
+            "npm:@angular/core",
+            "ng-whiteboard"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/examples/comprehensive/comprehensive.component.html",
+          "hash": "11806132326158428756"
+        },
+        {
+          "file": "projects/demo/src/app/examples/comprehensive/comprehensive.component.scss",
+          "hash": "16109007028568067786"
+        },
+        {
+          "file": "projects/demo/src/app/examples/comprehensive/comprehensive.component.spec.ts",
+          "hash": "11422158332461104374",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/examples/comprehensive/comprehensive.component.ts",
+          "hash": "1826439309774431122",
+          "deps": [
+            "npm:@angular/core",
+            "ng-whiteboard"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/examples/examples-routing.module.ts",
+          "hash": "8754784071212327003",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/examples/examples.component.html",
+          "hash": "9401888240345608505"
+        },
+        {
+          "file": "projects/demo/src/app/examples/examples.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/demo/src/app/examples/examples.component.spec.ts",
+          "hash": "11243637692567584985",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/examples/examples.component.ts",
+          "hash": "6792165110276092668",
+          "deps": [
+            "npm:@angular/core",
+            "ng-whiteboard"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/examples/examples.module.ts",
+          "hash": "4229451847926911133",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "ng-whiteboard"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/examples/minimal/minimal.component.ts",
+          "hash": "3858431763070960870",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/home/home-routing.module.ts",
+          "hash": "7713959194335710666",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/home/home.component.html",
+          "hash": "10715884859364336504"
+        },
+        {
+          "file": "projects/demo/src/app/home/home.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/demo/src/app/home/home.component.spec.ts",
+          "hash": "13776809565722092195",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/home/home.component.ts",
+          "hash": "7107596198636317619",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/home/home.module.ts",
+          "hash": "8431898873388705627",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "ng-whiteboard"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/live-app/live-app-routing.module.ts",
+          "hash": "14689327423690974847",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/live-app/live-app.component.html",
+          "hash": "1643607059063297759"
+        },
+        {
+          "file": "projects/demo/src/app/live-app/live-app.component.scss",
+          "hash": "10778233243010053346"
+        },
+        {
+          "file": "projects/demo/src/app/live-app/live-app.component.spec.ts",
+          "hash": "12379835602595026939",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/live-app/live-app.component.ts",
+          "hash": "15107544501670705378",
+          "deps": [
+            "npm:@angular/core",
+            "ng-whiteboard",
+            "npm:firebase"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/live-app/live-app.module.ts",
+          "hash": "8584189042341209338",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "ng-whiteboard",
+            "npm:ngx-colors"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/quick-start/quick-start-routing.module.ts",
+          "hash": "16802274132257099791",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/quick-start/quick-start.component.html",
+          "hash": "17243067329937128771"
+        },
+        {
+          "file": "projects/demo/src/app/quick-start/quick-start.component.spec.ts",
+          "hash": "10423210087714096212",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/quick-start/quick-start.component.ts",
+          "hash": "16731284079613732601",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/quick-start/quick-start.module.ts",
+          "hash": "12010780970240655274",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "ng-whiteboard"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/shared/components/header/header.component.html",
+          "hash": "15932519450780985858"
+        },
+        {
+          "file": "projects/demo/src/app/shared/components/header/header.component.ts",
+          "hash": "3455030710946094868",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/shared/directives/highlight.directive.ts",
+          "hash": "13892118430917839108",
+          "deps": [
+            "npm:@angular/core",
+            "npm:highlight.js"
+          ]
+        },
+        {
+          "file": "projects/demo/src/app/shared/shared.module.ts",
+          "hash": "11336780514590568630",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:ngx-colors"
+          ]
+        },
+        {
+          "file": "projects/demo/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/demo/src/assets/icons/icon-128x128.png",
+          "hash": "16243076817991255865"
+        },
+        {
+          "file": "projects/demo/src/assets/icons/icon-144x144.png",
+          "hash": "4518754189030877774"
+        },
+        {
+          "file": "projects/demo/src/assets/icons/icon-152x152.png",
+          "hash": "11420956736737248624"
+        },
+        {
+          "file": "projects/demo/src/assets/icons/icon-192x192.png",
+          "hash": "9042887987261712829"
+        },
+        {
+          "file": "projects/demo/src/assets/icons/icon-384x384.png",
+          "hash": "15020862798534123553"
+        },
+        {
+          "file": "projects/demo/src/assets/icons/icon-512x512.png",
+          "hash": "4775992945019222002"
+        },
+        {
+          "file": "projects/demo/src/assets/icons/icon-72x72.png",
+          "hash": "7045873703038425763"
+        },
+        {
+          "file": "projects/demo/src/assets/icons/icon-96x96.png",
+          "hash": "4196162740841179099"
+        },
+        {
+          "file": "projects/demo/src/assets/sass/_light.scss",
+          "hash": "9473771221076351869"
+        },
+        {
+          "file": "projects/demo/src/assets/sass/_main.scss",
+          "hash": "5529607133780626193"
+        },
+        {
+          "file": "projects/demo/src/assets/sass/_normalize.scss",
+          "hash": "17093769556853571440"
+        },
+        {
+          "file": "projects/demo/src/assets/theme.scss",
+          "hash": "4445025255398204948"
+        },
+        {
+          "file": "projects/demo/src/environments/environment.prod.ts",
+          "hash": "16050870238182590904"
+        },
+        {
+          "file": "projects/demo/src/environments/environment.ts",
+          "hash": "1379702239789901474"
+        },
+        {
+          "file": "projects/demo/src/favicon.ico",
+          "hash": "15870642529605120120"
+        },
+        {
+          "file": "projects/demo/src/index.html",
+          "hash": "4438276633827975406"
+        },
+        {
+          "file": "projects/demo/src/main.ts",
+          "hash": "12530990079120336302",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "projects/demo/src/manifest.json",
+          "hash": "15196414871472499598"
+        },
+        {
+          "file": "projects/demo/src/polyfills.ts",
+          "hash": "7176339394372785858",
+          "deps": [
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "projects/demo/src/styles.scss",
+          "hash": "4263638774131430977"
+        },
+        {
+          "file": "projects/demo/src/test-setup.ts",
+          "hash": "9531801021999427605",
+          "deps": [
+            "npm:jest-preset-angular/setup-jest"
+          ]
+        },
+        {
+          "file": "projects/demo/tsconfig.app.json",
+          "hash": "4032140008716332650"
+        },
+        {
+          "file": "projects/demo/tsconfig.editor.json",
+          "hash": "11539145186223711902"
+        },
+        {
+          "file": "projects/demo/tsconfig.json",
+          "hash": "13302696645648555329"
+        },
+        {
+          "file": "projects/demo/tsconfig.spec.json",
+          "hash": "8658740348867974260"
+        }
+      ]
+    }
+  }
+}
