@@ -2,6 +2,7 @@
   "version": 1,
   "projects": {
     "demo": {
+      "root": "",
       "projectType": "application",
       "sourceRoot": "projects/demo/src",
       "prefix": "ng-whiteboard",
@@ -86,10 +87,10 @@
             "passWithNoTests": true
           }
         }
-      },
-      "tags": []
+      }
     },
     "ng-whiteboard": {
+      "root": "",
       "sourceRoot": "projects/ng-whiteboard/src",
       "projectType": "library",
       "targets": {
@@ -123,8 +124,7 @@
             "passWithNoTests": true
           }
         }
-      },
-      "tags": []
+      }
     }
   }
 }
