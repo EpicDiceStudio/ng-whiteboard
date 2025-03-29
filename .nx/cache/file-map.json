@@ -78,425 +78,6 @@
   "fileMap": {
     "nonProjectFiles": [],
     "projectFileMap": {
-      "demo": [
-        {
-          "file": ".circleci/config.yml",
-          "hash": "11771173619561587110"
-        },
-        {
-          "file": ".editorconfig",
-          "hash": "10484780250276348131"
-        },
-        {
-          "file": ".eslintrc.json",
-          "hash": "6076523549091800167"
-        },
-        {
-          "file": ".github/workflows/main.yml",
-          "hash": "233642598036217223"
-        },
-        {
-          "file": ".gitignore",
-          "hash": "16541692331191330580"
-        },
-        {
-          "file": ".nx/cache/d/daemon.log",
-          "hash": "17594451190849851772"
-        },
-        {
-          "file": ".nx/cache/d/server-process.json",
-          "hash": "5555351685274655633"
-        },
-        {
-          "file": ".nx/cache/file-map.json",
-          "hash": "684073509656485683"
-        },
-        {
-          "file": ".nx/cache/lockfile.hash",
-          "hash": "11868915022685010068"
-        },
-        {
-          "file": ".nx/cache/parsed-lock-file.json",
-          "hash": "17327032449769187327"
-        },
-        {
-          "file": ".nx/cache/project-graph.json",
-          "hash": "12508368040724635277"
-        },
-        {
-          "file": ".nx/workspace-data/d/daemon.log",
-          "hash": "18436949162410031036"
-        },
-        {
-          "file": ".nx/workspace-data/nx_files.nxt",
-          "hash": "15022285065892625612"
-        },
-        {
-          "file": ".prettierignore",
-          "hash": "1324685984948235314"
-        },
-        {
-          "file": ".prettierrc",
-          "hash": "2708894617512409129"
-        },
-        {
-          "file": ".releaserc",
-          "hash": "14813095472536764596"
-        },
-        {
-          "file": ".travis.yml",
-          "hash": "5278501201145222435"
-        },
-        {
-          "file": ".vscode/extensions.json",
-          "hash": "1031907106376631047"
-        },
-        {
-          "file": ".vscode/launch.json",
-          "hash": "11294071126396992147"
-        },
-        {
-          "file": "CHANGELOG.md",
-          "hash": "14575259439405836668"
-        },
-        {
-          "file": "CODE_OF_CONDUCT.md",
-          "hash": "4771388369842176926"
-        },
-        {
-          "file": "CONTRIBUTING.md",
-          "hash": "17762494463552671656"
-        },
-        {
-          "file": "LICENSE",
-          "hash": "15044818247788196647"
-        },
-        {
-          "file": "README.md",
-          "hash": "449759454844677847"
-        },
-        {
-          "file": "changelog.config.js",
-          "hash": "11734347795214652686"
-        },
-        {
-          "file": "jest.config.ts",
-          "hash": "3069074216761126282",
-          "deps": [
-            "npm:@nrwl/jest"
-          ]
-        },
-        {
-          "file": "jest.preset.js",
-          "hash": "17666962557300311861",
-          "deps": [
-            "npm:@nrwl/jest"
-          ]
-        },
-        {
-          "file": "migrations.json",
-          "hash": "4037312767021889786"
-        },
-        {
-          "file": "nx.json",
-          "hash": "7365533479007552186"
-        },
-        {
-          "file": "package-lock.json",
-          "hash": "8146874737145210161"
-        },
-        {
-          "file": "package.json",
-          "hash": "8347401797210147477",
-          "deps": [
-            "npm:@angular/animations",
-            "npm:@angular/common",
-            "npm:@angular/compiler",
-            "npm:@angular/core",
-            "npm:@angular/forms",
-            "npm:@angular/platform-browser",
-            "npm:@angular/platform-browser-dynamic",
-            "npm:@angular/router",
-            "npm:@angular/service-worker",
-            "npm:@nrwl/angular",
-            "npm:d3",
-            "npm:firebase",
-            "npm:highlight.js",
-            "npm:ngx-colors",
-            "npm:ngx-toastr",
-            "npm:rxjs",
-            "npm:tslib",
-            "npm:zone.js",
-            "npm:@angular-devkit/build-angular",
-            "npm:@angular-eslint/eslint-plugin",
-            "npm:@angular-eslint/eslint-plugin-template",
-            "npm:@angular-eslint/template-parser",
-            "npm:@angular/cli",
-            "npm:@angular/compiler-cli",
-            "npm:@angular/language-service",
-            "npm:@angular/pwa",
-            "npm:@commitlint/cli",
-            "npm:@commitlint/config-conventional",
-            "npm:@nrwl/cli",
-            "npm:@nrwl/cypress",
-            "npm:@nrwl/eslint-plugin-nx",
-            "npm:@nrwl/linter",
-            "npm:@nrwl/nx-cloud",
-            "npm:@nrwl/workspace",
-            "npm:@semantic-release/changelog",
-            "npm:@semantic-release/commit-analyzer",
-            "npm:@semantic-release/git",
-            "npm:@semantic-release/github",
-            "npm:@semantic-release/npm",
-            "npm:@semantic-release/release-notes-generator",
-            "npm:@types/d3",
-            "npm:@types/node",
-            "npm:@typescript-eslint/eslint-plugin",
-            "npm:@typescript-eslint/parser",
-            "npm:codecov",
-            "npm:copyfiles",
-            "npm:cypress",
-            "npm:eslint",
-            "npm:eslint-config-prettier",
-            "npm:eslint-plugin-cypress",
-            "npm:git-cz",
-            "npm:husky",
-            "npm:lint-staged",
-            "npm:ng-packagr",
-            "npm:npm-run-all",
-            "npm:nx",
-            "npm:postcss",
-            "npm:postcss-import",
-            "npm:postcss-preset-env",
-            "npm:postcss-url",
-            "npm:prettier",
-            "npm:replace-json-property",
-            "npm:semantic-release",
-            "npm:ts-jest",
-            "npm:ts-node",
-            "npm:typescript"
-          ]
-        },
-        {
-          "file": "project.json",
-          "hash": "16507249312837047891"
-        },
-        {
-          "file": "tsconfig.base.json",
-          "hash": "13879268544167089056"
-        },
-        {
-          "file": ".nx/cache/terminalOutputs/14732497791767763762",
-          "hash": "3244421341483603138"
-        }
-      ],
-      "ng-whiteboard": [
-        {
-          "file": "projects/ng-whiteboard/.eslintrc.json",
-          "hash": "3183929628580698947"
-        },
-        {
-          "file": "projects/ng-whiteboard/LICENSE",
-          "hash": "15044818247788196647"
-        },
-        {
-          "file": "projects/ng-whiteboard/README.md",
-          "hash": "4778288948048043381"
-        },
-        {
-          "file": "projects/ng-whiteboard/jest.config.ts",
-          "hash": "16364473221723752346"
-        },
-        {
-          "file": "projects/ng-whiteboard/ng-package.json",
-          "hash": "14451142220152589146"
-        },
-        {
-          "file": "projects/ng-whiteboard/package.json",
-          "hash": "1208179509629848328",
-          "deps": [
-            "npm:tslib",
-            "npm:@angular/common",
-            "npm:@angular/core",
-            "npm:d3",
-            "npm:@types/d3"
-          ]
-        },
-        {
-          "file": "projects/ng-whiteboard/project.json",
-          "hash": "37241190343346578"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/index.ts",
-          "hash": "7677029108799610773"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/cursor.svg",
-          "hash": "16979264517110879566"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/cursors/eraser.svg",
-          "hash": "6505721692427840250"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/cursors/pencil.svg",
-          "hash": "15180579404370758558"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/add-element.model.ts",
-          "hash": "16530807508889519011"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/add-image.model.ts",
-          "hash": "8908829789016344718"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/element-type.enum.ts",
-          "hash": "16716828959754472177"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/elements/brush-element.model.ts",
-          "hash": "10357669927501831560"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/elements/ellipse-element.model.ts",
-          "hash": "6729357636552863869"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/elements/image-element.model.ts",
-          "hash": "14284384018478666916"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/elements/index.ts",
-          "hash": "15849671603929907800"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/elements/line-element.model.ts",
-          "hash": "5953744253232302577"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/elements/rect-element.model.ts",
-          "hash": "9232907699407924335"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/elements/text-element.model.ts",
-          "hash": "10064095732811880405"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/format.model.ts",
-          "hash": "9606778172847339916"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/index.ts",
-          "hash": "5628037812028522024"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/line-cap.enum.ts",
-          "hash": "3181109951266286581"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/line-join.enum.ts",
-          "hash": "15238737120270834768"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/patch-element.model.ts",
-          "hash": "14990787514430633634"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/remove-element.model.ts",
-          "hash": "12886869320988967564"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/tools.enum.ts",
-          "hash": "12631552197051945993"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/update-element.model.ts",
-          "hash": "8114732015101520411"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/whiteboard-element-options.model.ts",
-          "hash": "9558580456981449707"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/whiteboard-element.model.ts",
-          "hash": "6172170017198215645"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/models/whiteboard-options.model.ts",
-          "hash": "917963529742957696"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.html",
-          "hash": "3220714277899811161"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.scss",
-          "hash": "1699636222259423673"
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.spec.ts",
-          "hash": "6229221159442927901",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.ts",
-          "hash": "13723153624659971288",
-          "deps": [
-            "npm:@angular/core",
-            "npm:rxjs",
-            "npm:d3"
-          ]
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.module.ts",
-          "hash": "1553770486848561261",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.service.spec.ts",
-          "hash": "5665737784015855147",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.service.ts",
-          "hash": "11711274521579875425",
-          "deps": [
-            "npm:@angular/core",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "projects/ng-whiteboard/src/test-setup.ts",
-          "hash": "9531801021999427605",
-          "deps": [
-            "npm:jest-preset-angular/setup-jest"
-          ]
-        },
-        {
-          "file": "projects/ng-whiteboard/tsconfig.json",
-          "hash": "6288192915562887729"
-        },
-        {
-          "file": "projects/ng-whiteboard/tsconfig.lib.json",
-          "hash": "11446785392186267127"
-        },
-        {
-          "file": "projects/ng-whiteboard/tsconfig.lib.prod.json",
-          "hash": "12672405423878371231"
-        },
-        {
-          "file": "projects/ng-whiteboard/tsconfig.spec.json",
-          "hash": "8658740348867974260"
-        }
-      ],
       "ng-whiteboard-demo": [
         {
           "file": "projects/demo/.browserslistrc",
@@ -948,6 +529,389 @@
         {
           "file": "projects/demo/tsconfig.spec.json",
           "hash": "8658740348867974260"
+        }
+      ],
+      "ng-whiteboard": [
+        {
+          "file": "projects/ng-whiteboard/.eslintrc.json",
+          "hash": "3183929628580698947"
+        },
+        {
+          "file": "projects/ng-whiteboard/LICENSE",
+          "hash": "15044818247788196647"
+        },
+        {
+          "file": "projects/ng-whiteboard/README.md",
+          "hash": "4778288948048043381"
+        },
+        {
+          "file": "projects/ng-whiteboard/jest.config.ts",
+          "hash": "16364473221723752346"
+        },
+        {
+          "file": "projects/ng-whiteboard/ng-package.json",
+          "hash": "14451142220152589146"
+        },
+        {
+          "file": "projects/ng-whiteboard/package.json",
+          "hash": "4234239589299581307",
+          "deps": [
+            "npm:tslib",
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:d3",
+            "npm:@types/d3"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/project.json",
+          "hash": "37241190343346578"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/index.ts",
+          "hash": "7677029108799610773"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/cursor.svg",
+          "hash": "16979264517110879566"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/cursors/eraser.svg",
+          "hash": "6505721692427840250"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/cursors/pencil.svg",
+          "hash": "15180579404370758558"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/add-element.model.ts",
+          "hash": "16530807508889519011"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/add-image.model.ts",
+          "hash": "8908829789016344718"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/element-type.enum.ts",
+          "hash": "16716828959754472177"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/brush-element.model.ts",
+          "hash": "10357669927501831560"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/ellipse-element.model.ts",
+          "hash": "6729357636552863869"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/image-element.model.ts",
+          "hash": "14284384018478666916"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/index.ts",
+          "hash": "15849671603929907800"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/line-element.model.ts",
+          "hash": "5953744253232302577"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/rect-element.model.ts",
+          "hash": "9232907699407924335"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/elements/text-element.model.ts",
+          "hash": "10064095732811880405"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/format.model.ts",
+          "hash": "9606778172847339916"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/index.ts",
+          "hash": "5628037812028522024"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/line-cap.enum.ts",
+          "hash": "3181109951266286581"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/line-join.enum.ts",
+          "hash": "15238737120270834768"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/patch-element.model.ts",
+          "hash": "14990787514430633634"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/remove-element.model.ts",
+          "hash": "12886869320988967564"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/tools.enum.ts",
+          "hash": "12631552197051945993"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/update-element.model.ts",
+          "hash": "8114732015101520411"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/whiteboard-element-options.model.ts",
+          "hash": "9558580456981449707"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/whiteboard-element.model.ts",
+          "hash": "6172170017198215645"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/models/whiteboard-options.model.ts",
+          "hash": "917963529742957696"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.html",
+          "hash": "3220714277899811161"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.scss",
+          "hash": "1699636222259423673"
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.spec.ts",
+          "hash": "6229221159442927901",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.component.ts",
+          "hash": "13723153624659971288",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:d3"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.module.ts",
+          "hash": "1553770486848561261",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.service.spec.ts",
+          "hash": "5665737784015855147",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/src/lib/ng-whiteboard.service.ts",
+          "hash": "11711274521579875425",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/src/test-setup.ts",
+          "hash": "9531801021999427605",
+          "deps": [
+            "npm:jest-preset-angular/setup-jest"
+          ]
+        },
+        {
+          "file": "projects/ng-whiteboard/tsconfig.json",
+          "hash": "6288192915562887729"
+        },
+        {
+          "file": "projects/ng-whiteboard/tsconfig.lib.json",
+          "hash": "11446785392186267127"
+        },
+        {
+          "file": "projects/ng-whiteboard/tsconfig.lib.prod.json",
+          "hash": "12672405423878371231"
+        },
+        {
+          "file": "projects/ng-whiteboard/tsconfig.spec.json",
+          "hash": "8658740348867974260"
+        }
+      ],
+      "demo": [
+        {
+          "file": ".circleci/config.yml",
+          "hash": "11771173619561587110"
+        },
+        {
+          "file": ".editorconfig",
+          "hash": "10484780250276348131"
+        },
+        {
+          "file": ".eslintrc.json",
+          "hash": "6076523549091800167"
+        },
+        {
+          "file": ".github/workflows/main.yml",
+          "hash": "233642598036217223"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "5412886155220021842"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "1324685984948235314"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "2708894617512409129"
+        },
+        {
+          "file": ".releaserc",
+          "hash": "14813095472536764596"
+        },
+        {
+          "file": ".travis.yml",
+          "hash": "5278501201145222435"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "1031907106376631047"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "11294071126396992147"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "hash": "6280246873650461715"
+        },
+        {
+          "file": "CODE_OF_CONDUCT.md",
+          "hash": "4771388369842176926"
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "hash": "17762494463552671656"
+        },
+        {
+          "file": "LICENSE",
+          "hash": "15044818247788196647"
+        },
+        {
+          "file": "README.md",
+          "hash": "449759454844677847"
+        },
+        {
+          "file": "changelog.config.js",
+          "hash": "11734347795214652686"
+        },
+        {
+          "file": "jest.config.ts",
+          "hash": "3069074216761126282",
+          "deps": [
+            "npm:@nrwl/jest"
+          ]
+        },
+        {
+          "file": "jest.preset.js",
+          "hash": "17666962557300311861",
+          "deps": [
+            "npm:@nrwl/jest"
+          ]
+        },
+        {
+          "file": "migrations.json",
+          "hash": "4037312767021889786"
+        },
+        {
+          "file": "nx.json",
+          "hash": "7365533479007552186"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "8146874737145210161"
+        },
+        {
+          "file": "package.json",
+          "hash": "8347401797210147477",
+          "deps": [
+            "npm:@angular/animations",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@angular/service-worker",
+            "npm:@nrwl/angular",
+            "npm:d3",
+            "npm:firebase",
+            "npm:highlight.js",
+            "npm:ngx-colors",
+            "npm:ngx-toastr",
+            "npm:rxjs",
+            "npm:tslib",
+            "npm:zone.js",
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular-eslint/eslint-plugin",
+            "npm:@angular-eslint/eslint-plugin-template",
+            "npm:@angular-eslint/template-parser",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@angular/language-service",
+            "npm:@angular/pwa",
+            "npm:@commitlint/cli",
+            "npm:@commitlint/config-conventional",
+            "npm:@nrwl/cli",
+            "npm:@nrwl/cypress",
+            "npm:@nrwl/eslint-plugin-nx",
+            "npm:@nrwl/linter",
+            "npm:@nrwl/nx-cloud",
+            "npm:@nrwl/workspace",
+            "npm:@semantic-release/changelog",
+            "npm:@semantic-release/commit-analyzer",
+            "npm:@semantic-release/git",
+            "npm:@semantic-release/github",
+            "npm:@semantic-release/npm",
+            "npm:@semantic-release/release-notes-generator",
+            "npm:@types/d3",
+            "npm:@types/node",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:codecov",
+            "npm:copyfiles",
+            "npm:cypress",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-cypress",
+            "npm:git-cz",
+            "npm:husky",
+            "npm:lint-staged",
+            "npm:ng-packagr",
+            "npm:npm-run-all",
+            "npm:nx",
+            "npm:postcss",
+            "npm:postcss-import",
+            "npm:postcss-preset-env",
+            "npm:postcss-url",
+            "npm:prettier",
+            "npm:replace-json-property",
+            "npm:semantic-release",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "project.json",
+          "hash": "16507249312837047891"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "13879268544167089056"
         }
       ]
     }
