@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.9.1...v1.9.2) (2025-03-29)
+
+
+### Bug Fixes
+
+* dependencies versions ([30dccc9](https://github.com/EpicDiceStudio/ng-whiteboard/commit/30dccc990798937e22576c89799c4fe9baa16d4e))
+
 ## [1.9.1](https://github.com/EpicDiceStudio/ng-whiteboard/compare/v1.9.0...v1.9.1) (2025-03-24)
 
 
